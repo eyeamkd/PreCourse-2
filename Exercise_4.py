@@ -1,3 +1,16 @@
+"""
+Time Complexity:
+merge: O(n) where n is the total length of left and right arrays
+mergeSort: O(n log n) as we divide the array in half each time (log n) and merge takes O(n)
+
+Worst Case: O(n log n) - Merge sort maintains consistent performance regardless of input order
+Best Case: O(n log n) - Even with sorted input, we still need to perform all divisions and merges
+
+Space Complexity:
+merge: O(n) for the result array
+mergeSort: O(n) for the recursive call stack and temporary arrays
+"""
+
 # Python program for implementation of MergeSort 
 def merge(left, right):
     result = []
